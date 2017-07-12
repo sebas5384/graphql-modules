@@ -4,6 +4,7 @@
   "description": "GraphQL module library for Apollo.",
   "main": "index.js",
   "scripts": {
+    "postinstall": "npm run compile",
     "compile": "babel src -d lib",
     "lint": "eslint index.js src",
     "test": "mocha --require babel-register",
